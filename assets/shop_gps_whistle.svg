@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#E0E7FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="380" rx="18" fill="url(#bg5)"/>
+  <rect x="16" y="16" width="608" height="348" rx="14" fill="none" stroke="#4F46E5" stroke-width="2"/>
+  <!-- GPS Tracker -->
+  <g transform="translate(50, 52)">
+    <rect x="0" y="0" width="165" height="190" rx="16" fill="#FFFFFF" stroke="#818CF8" stroke-width="2"/>
+    <rect x="42" y="28" width="80" height="92" rx="22" fill="#1E1B4B" stroke="#4F46E5" stroke-width="3"/>
+    <circle cx="82" cy="64" r="18" fill="#4F46E5"/>
+    <circle cx="82" cy="64" r="7" fill="#FFFFFF"/>
+    <rect x="66" y="96" width="32" height="10" rx="5" fill="#EF4444"/>
+    <text x="82" y="146" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Детский GPS-маячок</text>
+    <text x="82" y="164" text-anchor="middle" fill="#475569" font-family="Arial, sans-serif" font-size="11">До 14 дней заряда · SOS</text>
+  </g>
+  <!-- Whistle 120 dB -->
+  <g transform="translate(237, 52)">
+    <rect x="0" y="0" width="165" height="190" rx="16" fill="#FFFFFF" stroke="#818CF8" stroke-width="2"/>
+    <path d="M35 80 L105 80 A22 22 0 1 1 85 110 L65 110 L65 95 L35 95 Z" fill="#EA580C"/>
+    <path d="M125 65 L142 52 M130 82 L148 82 M125 98 L142 110" stroke="#EA580C" stroke-width="4" stroke-linecap="round"/>
+    <text x="82" y="146" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Свисток спасателя</text>
+    <text x="82" y="164" text-anchor="middle" fill="#C2410C" font-family="Arial, sans-serif" font-size="11" font-weight="bold">120 дБ (слышен за 1 км)</text>
+  </g>
+  <!-- 4 Reflectors -->
+  <g transform="translate(425, 52)">
+    <rect x="0" y="0" width="165" height="190" rx="16" fill="#FFFFFF" stroke="#818CF8" stroke-width="2"/>
+    <circle cx="60" cy="60" r="22" fill="#FDE047" stroke="#EAB308" stroke-width="4"/>
+    <circle cx="108" cy="60" r="22" fill="#FDE047" stroke="#EAB308" stroke-width="4"/>
+    <circle cx="60" cy="105" r="22" fill="#38BDF8" stroke="#0284C7" stroke-width="4"/>
+    <circle cx="108" cy="105" r="22" fill="#4ADE80" stroke="#16A34A" stroke-width="4"/>
+    <text x="82" y="150" text-anchor="middle" fill="#1E1B4B" font-family="Arial, sans-serif" font-size="13" font-weight="bold">4 светоотражателя</text>
+    <text x="82" y="168" text-anchor="middle" fill="#475569" font-family="Arial, sans-serif" font-size="11">На ранец и куртку</text>
+  </g>
+  <rect x="50" y="268" width="540" height="72" rx="12" fill="#1E1B4B"/>
+  <text x="320" y="297" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="15" font-weight="bold">НАБОР «ВСЕГДА НА СВЯЗИ»: GPS-МАЯЧОК + СВИСТОК 120 дБ + ФЛИКЕРЫ</text>
+  <text x="320" y="323" text-anchor="middle" fill="#A5B4FC" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Примерная цена комплекта: ~16 800 ₸ · Доставка по всей РК</text>
+</svg>

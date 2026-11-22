@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Проект национальной платформы «Безопасная нация» — Демо-версия | ТОО «Метод и Ко»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="platform_styles.css" />
+</head>
+<body class="skin-v3">
+
+  <!-- КОМПАКТНАЯ АДАПТИВНАЯ ШАПКА ПЛАТФОРМЫ -->
+  <header class="bn-topbar">
+    <div class="bn-topbar-inner">
+      <div class="bn-brand" onclick="BN_APP.openSection('home')">
+        <div class="bn-brand-shield" style="background:linear-gradient(135deg,#10B981,#047857);">112</div>
+        <div>
+          <div class="bn-brand-title" data-ru="Безопасная нация · Демо-версия" data-kz="Қауіпсіз ұлт · Демо-нұсқа">Безопасная нация · Демо-версия</div>
+          <div class="bn-brand-sub" data-ru="Проект национальной платформы · Разработчик: ТОО «Метод и Ко»" data-kz="Ұлттық платформа жобасы · Әзірлеуші: «Метод и Ко» ЖШС">Проект национальной платформы · Разработчик: ТОО «Метод и Ко»</div>
+        </div>
+      </div>
+
+      <div class="bn-top-controls">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <button type="button" id="btn-a11y" class="bn-top-btn" onclick="BN_APP.toggleA11y()" aria-pressed="false" title="Увеличить шрифт и контраст">
+            <span data-ru="👁️ A+" data-kz="👁️ A+">👁️ A+</span>
+          </button>
+          <div class="bn-lang-group">
+            <button type="button" class="lang-btn active" data-lang="ru" onclick="BN_APP.setLang('ru')">РУС</button>
+            <button type="button" class="lang-btn" data-lang="kz" onclick="BN_APP.setLang('kz')">ҚАЗ</button>
+          </div>
+          <button type="button" id="btn-mobile-menu" class="bn-mobile-menu-toggle" onclick="BN_APP.toggleMobileMenu()" aria-expanded="false">
+            <span data-ru="☰ Меню" data-kz="☰ Мәзір">☰ Меню</span>
+          </button>
+        </div>
+
+        <div id="bn-nav-collapsible" class="bn-nav-collapsible">
+          <button type="button" id="btn-top-home" class="bn-top-btn" style="display:none;" onclick="BN_APP.openSection('home')">
+            <span data-ru="← На главную" data-kz="← Басты бетке">← На главную</span>
+          </button>
+          <button type="button" class="bn-top-btn bn-top-cta" onclick="BN_APP.openAboutModal()">
+            <span data-ru="🏛️ Наша миссия" data-kz="🏛️ Біздің миссия">🏛️ Наша миссия</span>
+          </button>
+          <button type="button" class="bn-top-btn" onclick="BN_APP.openSection('gov')">
+            <span data-ru="🏛️ Государству" data-kz="🏛️ Мемлекетке">🏛️ Государству</span>
+          </button>
+          <button type="button" class="bn-top-btn" onclick="BN_APP.openSection('shop')">
+            <span data-ru="🛍️ Магазин и курсы" data-kz="🛍️ Дүкен және курстар">🛍️ Магазин и курсы</span>
+          </button>
+          <button type="button" class="bn-top-btn" onclick="BN_APP.openContactModal('Общий запрос по проекту «Безопасная нация»')">
+            <span data-ru="✉️ Связаться" data-kz="✉️ Байланысу">✉️ Связаться</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="bn-container">
+    <!-- ==================== ГЛАВНЫЙ ЭКРАН ==================== -->
+    <section id="bn-home-view">
+      <!-- Компактный верхний блок БЕЗ дублирующихся кнопок (они уже на верхней панели) -->
+      <div class="bn-hero-box" style="background:linear-gradient(135deg,#FFFFFF 0%,#F0FDF4 100%);border:2px solid #A7F3D0;padding:22px 26px;margin-bottom:18px;">
+        <div style="max-width:100%;">
+          <span class="bn-kicker-badge" style="background:#D1FAE5;color:#065F46;border-color:#6EE7B7;margin-bottom:8px;" data-ru="Проект национальной платформы · Демо-версия · Разработчик: ТОО «Метод и Ко»" data-kz="Ұлттық платформа жобасы · Демо-нұсқа · Әзірлеуші: «Метод и Ко» ЖШС">Проект национальной платформы · Демо-версия · Разработчик: ТОО «Метод и Ко»</span>
+          <h1 class="bn-hero-title" style="color:#064E3B;font-size:1.7rem;margin-bottom:8px;" data-ru="Безопасность каждого ребёнка, семьи, школы и региона Казахстана" data-kz="Қазақстанның әр баласының, отбасының, мектебінің және өңірінің қауіпсіздігі">Безопасность каждого ребёнка, семьи, школы и региона Казахстана</h1>
+          <p class="bn-hero-lead" style="color:#1E293B;font-size:1rem;margin-bottom:10px;" data-ru="Интерактивные тренажёры, уроки, витрина оснащения и открытая площадка для курсов безопасности. В демо-версии доступны 7 живых разделов, а остальные 24 отраслевых модуля показаны серым для демонстрации полного потенциала." data-kz="Интерактивті тренажерлер, сабақтар, жабдықтау витринасы және қауіпсіздік курстарына арналған ашық алаң. Демо-нұсқада 7 тірі бөлім жұмыс істейді, ал қалған 24 салалық модуль толық әлеуетті көрсету үшін сұр түспен берілген.">Интерактивные тренажёры, уроки, витрина оснащения и открытая площадка для курсов безопасности. В демо-версии доступны 7 живых разделов, а остальные 24 отраслевых модуля показаны серым для демонстрации полного потенциала.</p>
+          <div class="bn-inclusive-format-strip" data-ru="♿ <strong>Единый инклюзивный стандарт уроков:</strong> все учебные модули платформы разрабатываются сразу в 4 форматах — видео, аудио, субтитры и сурдоперевод, чтобы обучение было доступно каждому." data-kz="♿ <strong>Сабақтардың бірыңғай инклюзивті стандарты:</strong> платформаның барлық оқу модульдері бірден 4 форматта әзірленеді — бейне, аудио, субтитр және сурдоаударма, оқыту әркімге қолжетімді болуы үшін.">♿ <strong>Единый инклюзивный стандарт уроков:</strong> все учебные модули платформы разрабатываются сразу в 4 форматах — видео, аудио, субтитры и сурдоперевод, чтобы обучение было доступно каждому.</div>
+        </div>
+      </div>
+
+      <!-- 1. ОСНОВНЫЕ АКТИВНЫЕ РАЗДЕЛЫ ДЕМО-ВЕРСИИ -->
+      <div class="bn-section-head-bar">
+        <div>
+          <h2 data-ru="🟢 Активные разделы демо-версии — нажмите, чтобы войти внутрь" data-kz="🟢 Демо-нұсқаның белсенді бөлімдері — ішіне кіру үшін басыңыз">🟢 Активные разделы демо-версии — нажмите, чтобы войти внутрь</h2>
+          <p data-ru="Живые аудиосказки, игры, показательные школьные уроки, тренажёры, условная аналитика для регионов и магазин с прямым переходом к товарам." data-kz="Тірі аудиоертегілер, ойындар, үлгілік мектеп сабақтары, тренажерлер, өңірлерге арналған шартты аналитика және тауарларға тікелей өтетін дүкен.">Живые аудиосказки, игры, показательные школьные уроки, тренажёры, условная аналитика для регионов и магазин с прямым переходом к товарам.</p>
+        </div>
+      </div>
+
+      <div id="bn-home-grid" class="bn-home-grid"></div>
+
+      <!-- 2. КОМПАКТНЫЕ ВКЛАДКИ ПОТЕНЦИАЛА ПОЛНОЙ ВЕРСИИ (СЕРЫЕ БЛОКИ — БЕЗ 15 ЭКРАНОВ ПРОКРУТКИ НА ТЕЛЕФОНЕ!) -->
+      <div id="bn-home-potential-gray"></div>
+
+      <!-- 3. ПЛОЩАДКА ДЛЯ ДЕЙСТВУЮЩИХ КУРСОВ (ЗА % КОМИССИИ) + БЛАГОТВОРИТЕЛЬНОСТЬ И ПАРТНЁРЫ -->
+      <div id="bn-home-partners-marketplace"></div>
+
+      <!-- 4. ПОДАРОК В САМОМ КОНЦЕ ГЛАВНОЙ СТРАНИЦЫ: СЕМЕЙНЫЙ ПАСПОРТ 72 ЧАСА -->
+      <div id="bn-home-gift-passport"></div>
+
+      <!-- 5. КТО ЗА ПРОЕКТОМ (БЕЗ ФОТО) И СВЯЗАТЬСЯ С РАЗРАБОТЧИКОМ -->
+      <div id="bn-home-who-contact"></div>
+    </section>
+
+    <!-- ВНУТРЕННЕЕ ПРОСТРАНСТВО РАЗДЕЛОВ -->
+    <section id="bn-detail-view" style="display:none;"></section>
+  </main>
+
+  <footer class="bn-footer">
+    <div class="bn-footer-inner">
+      <div class="bn-privacy-strip" data-ru="🔒 <strong>Как мы бережём данные:</strong> персональные данные детей не собираются, не хранятся и не передаются на сервер. Все тренажёры и расчёты работают анонимно прямо в браузере (в соответствии с Законом РК «О персональных данных и их защите»)." data-kz="🔒 <strong>Деректерді қалай қорғаймыз:</strong> балалардың дербес деректері жиналмайды, сақталмайды және серверге жіберілмейді. Барлық тренажерлер мен есептер браузерде анонимді түрде жұмыс істейді (ҚР «Дербес деректер және оларды қорғау туралы» Заңына сәйкес).">🔒 <strong>Как мы бережём данные:</strong> персональные данные детей не собираются, не хранятся и не передаются на сервер. Все тренажёры и расчёты работают анонимно прямо в браузере (в соответствии с Законом РК «О персональных данных и их защите»).</div>
+      <div data-ru="<strong>© 2026 Проект национальной платформы «Безопасная нация» (Демо-версия)</strong> · Разработчик: ТОО «Метод и Ко» (Бюро образовательных стандартов «МЕТОДИКО», г. Алматы)." data-kz="<strong>© 2026 «Қауіпсіз ұлт» ұлттық платформасының жобасы (Демо-нұсқа)</strong> · Әзірлеуші: «Метод и Ко» ЖШС («МЕТОДИКО» білім беру стандарттары бюросы, Алматы қ.)."><strong>© 2026 Проект национальной платформы «Безопасная нация» (Демо-версия)</strong> · Разработчик: ТОО «Метод и Ко» (Бюро образовательных стандартов «МЕТОДИКО», г. Алматы).</div>
+      <div data-ru="Демо-стенд: все показатели условные. Учебные тренажёры не заменяют очное обучение; при опасности звоните 112." data-kz="Демо-стенд: барлық көрсеткіштер шартты. Оқу тренажерлері бетпе-бет оқытуды алмастырмайды; қауіп төнгенде 112-ге қоңырау шалыңыз.">Демо-стенд: все показатели условные. Учебные тренажёры не заменяют очное обучение; при опасности звоните 112.</div>
+    </div>
+  </footer>
+
+  <script src="platform_engine.js"></script>
+</body>
+</html>

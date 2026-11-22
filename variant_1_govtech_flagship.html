@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Национальная цифровая платформа «Безопасная нация»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="platform_styles.css" />
+  <style>
+    .v3-dual-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+    .v3-spot-card {
+      background: #FFFFFF;
+      border: 2px solid #A7F3D0;
+      border-radius: 20px;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      box-shadow: 0 8px 24px rgba(5, 150, 105, 0.07);
+    }
+    .v3-spot-card.v3-spot-trailer {
+      border-color: #FCD34D;
+      background: #FFFBEB;
+    }
+    .v3-spot-thumb {
+      width: 115px;
+      height: 86px;
+      object-fit: cover;
+      border-radius: 12px;
+      flex-shrink: 0;
+      border: 1px solid #CBD5E1;
+    }
+    @media (max-width: 960px) {
+      .v3-dual-showcase { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="skin-v1">
+
+  <!-- ШАПКА ПЛАТФОРМЫ -->
+  <header class="bn-topbar">
+    <div class="bn-topbar-inner">
+      <div class="bn-brand" onclick="BN_APP.openSection('home')">
+        <div class="bn-brand-shield" style="background:linear-gradient(135deg,#10B981,#047857);">112</div>
+        <div>
+          <div class="bn-brand-title" data-ru="БЕЗОПАСНАЯ НАЦИЯ · ЭКОСИСТЕМА ПОКОЛЕНИЙ" data-kz="ҚАУІПСІЗ ҰЛТ · БУЫНДАР ЭКОЖҮЙЕСІ">БЕЗОПАСНАЯ НАЦИЯ · ЭКОСИСТЕМА ПОКОЛЕНИЙ</div>
+          <div class="bn-brand-sub" data-ru="Обучение, тренажёры и оснащение безопасности согласно образовательным стандартам РК" data-kz="ҚР білім беру стандарттарына сәйкес оқыту, тренажерлер және қауіпсіздікті жабдықтау">Обучение, тренажёры и оснащение безопасности согласно образовательным стандартам РК</div>
+        </div>
+      </div>
+
+      <div class="bn-top-controls">
+        <button type="button" id="btn-top-home" class="bn-top-btn" style="display:none;" onclick="BN_APP.openSection('home')">
+          ← На Главную
+        </button>
+        <button type="button" class="bn-top-btn" onclick="BN_APP.openAboutModal()">
+          <span data-ru="🏛️ О нас и Миссия" data-kz="🏛️ Біз туралы және Миссия">🏛️ О нас и Миссия</span>
+        </button>
+        <button type="button" class="bn-top-btn bn-top-cta" onclick="BN_APP.openSection('family')">
+          <span data-ru="🎁 Семейный паспорт 72ч (Бесплатно)" data-kz="🎁 Отбасылық паспорт 72с (Тегін)">🎁 Семейный паспорт 72ч (Бесплатно)</span>
+        </button>
+        <button type="button" class="bn-top-btn" onclick="BN_APP.openSection('gov')">
+          <span data-ru="🏛️ Кабинет Государства и Регионов" data-kz="🏛️ Мемлекет және Өңірлер кабинеті">🏛️ Кабинет Государства и Регионов</span>
+        </button>
+        <button type="button" id="btn-a11y" class="bn-top-btn" onclick="BN_APP.toggleA11y()" aria-pressed="false">
+          <span data-ru="👁️ Инклюзия A+" data-kz="👁️ Инклюзия A+">👁️ Инклюзия A+</span>
+        </button>
+        <div class="bn-lang-group">
+          <button type="button" class="lang-btn active" data-lang="ru" onclick="BN_APP.setLang('ru')">РУС</button>
+          <button type="button" class="lang-btn" data-lang="kz" onclick="BN_APP.setLang('kz')">ҚАЗ</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="bn-container">
+    <!-- ==================== ГЛАВНЫЙ ЭКРАН (УТВЕРЖДЁННЫЙ ВАРИАНТ 3: ЭКОСИСТЕМНЫЙ ПОРТАЛ) ==================== -->
+    <section id="bn-home-view">
+      <div class="bn-hero-box" style="background:linear-gradient(135deg,#FFFFFF 0%,#F0FDF4 100%);border:2px solid #A7F3D0;">
+        <div class="bn-hero-grid">
+          <div>
+            <span class="bn-kicker-badge" style="background:#D1FAE5;color:#065F46;border-color:#6EE7B7;" data-ru="НАЦИОНАЛЬНАЯ ЦИФРОВАЯ ПЛАТФОРМА · В СООТВЕТСТВИИ С ОБРАЗОВАТЕЛЬНЫМИ СТАНДАРТАМИ РК" data-kz="ҰЛТТЫҚ ЦИФРЛЫҚ ПЛАТФОРМА · ҚР БІЛІМ БЕРУ СТАНДАРТТАРЫНА СӘЙКЕС">НАЦИОНАЛЬНАЯ ЦИФРОВАЯ ПЛАТФОРМА · В СООТВЕТСТВИИ С ОБРАЗОВАТЕЛЬНЫМИ СТАНДАРТАМИ РК</span>
+            <h1 class="bn-hero-title" style="color:#064E3B;" data-ru="Безопасность каждого дома, каждой школы и каждого региона Казахстана" data-kz="Қазақстанның әр үйінің, әр мектебінің және әр өңірінің қауіпсіздігі">Безопасность каждого дома, каждой школы и каждого региона Казахстана</h1>
+            <p class="bn-hero-lead" style="color:#1E293B;" data-ru="Чёткое разделение форматов по возрастным и государственным стандартам: обучающие аудиосказки и игры со Стражиком для дошкольников (1–6 лет), интерактивные уроки и симуляторы для школьников, и строгий государственный стандарт для министерств, акиматов, вузов и корпоративных партнёров." data-kz="Жас ерекшеліктері мен мемлекеттік стандарттарға сәйкес форматтар: мектепке дейінгі балаларға (1–6 жас) арналған Стражик аудиоертегілері, оқушыларға арналған симуляторлар және ведомстволар мен серіктестерге арналған қатаң мемлекеттік стандарт.">Чёткое разделение форматов по возрастным и государственным стандартам: обучающие аудиосказки и игры со Стражиком для дошкольников (1–6 лет), интерактивные уроки и симуляторы для школьников, и строгий государственный стандарт для министерств, акиматов, вузов и корпоративных партнёров.</p>
+            <div class="bn-btn-row">
+              <button type="button" class="bn-primary-btn" style="background:#059669;" onclick="BN_APP.openSection('family')">
+                🎁 Получить бесплатный «Семейный паспорт 72 часа» →
+              </button>
+            </div>
+          </div>
+
+          <!-- КОРОТКО О МИССИИ НА ГЛАВНОЙ -->
+          <div class="bn-mission-card-inline" style="background:#FFFFFF;border:1.5px solid #CBD5E1;">
+            <h3 style="color:#0F233E;" data-ru="О нас и нашей миссии: зачем мы вам" data-kz="Біз туралы және біздің миссиямыз">О нас и нашей миссии: зачем мы вам</h3>
+            <p style="font-size:0.86rem;color:#334155;margin-bottom:8px;">Разработано <strong>Бюро образовательных стандартов «МЕТОДИКО»</strong> в соответствии с требованиями действующих образовательных стандартов и законодательства Республики Казахстан:</p>
+            <ul class="bn-mission-list" style="color:#1E293B;">
+              <li><strong>Семье и детям:</strong> устойчивый практический навык действий при ЧС и защита от мошенников вместо формальных памяток;</li>
+              <li><strong>Школам и учителям:</strong> готовый режим «Нажми Play — экран ведёт урок Адал азамат» без часов подготовки;</li>
+              <li><strong>Инклюзия и СУСН:</strong> защита людей с особыми потребностями (ООП) и создание рабочих мест по госпрограммам;</li>
+              <li><strong>Государству и Спонсорам:</strong> аналитический дашборд, карта ПППН/бункеров и Мобильные лаборатории-прицепы 112.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ДВА АКЦЕНТНЫХ БЛОКА НА ГЛАВНОЙ: ДОШКОЛЬНЫЙ КОНТУР И МОБИЛЬНАЯ ЛАБОРАТОРИЯ ОТ МЕЦЕНАТОВ -->
+      <div class="v3-dual-showcase">
+        <div class="v3-spot-card">
+          <img src="assets/strazhik_ok.png" alt="Стражик" class="v3-spot-thumb" style="object-fit:contain;background:#FFF7ED;border-color:#FDBA74;"/>
+          <div>
+            <span class="bn-pill-tag" style="background:#FFEDD5;color:#C2410C;">ДЛЯ МАЛЫШЕЙ 1–6 ЛЕТ И СЕМЕЙ</span>
+            <h4 style="margin-bottom:4px;">Дошкольный мир Стражика + Паспорт семьи 72 часа</h4>
+            <p style="font-size:0.84rem;color:#475569;margin-bottom:8px;">Включите живую аудиосказку со Стражиком и бесплатно рассчитайте запас воды и точку сбора вашей семьи при ЧС.</p>
+            <button type="button" class="bn-primary-btn" style="padding:7px 14px;font-size:0.82rem;background:#EA580C;" onclick="BN_APP.openSection('kids')">Открыть детский мир Стражика →</button>
+          </div>
+        </div>
+
+        <div class="v3-spot-card v3-spot-trailer">
+          <img src="assets/mobile_lab_trailer.png" alt="Мобильная лаборатория 112" class="v3-spot-thumb"/>
+          <div>
+            <span class="bn-pill-tag" style="background:#FEF3C7;color:#92400E;">ДЛЯ БЛАГОТВОРИТЕЛЕЙ, ESG-ФОНДОВ И АКИМАТОВ</span>
+            <h4 style="margin-bottom:4px;">Мобильная лаборатория 112 на базе прицепа</h4>
+            <p style="font-size:0.84rem;color:#475569;margin-bottom:8px;">Подарите брендированный вашим логотипом автоприцеп-лабораторию (VR + СЛР + дым + БПЛА) школам и аулам региона!</p>
+            <button type="button" class="bn-primary-btn" style="padding:7px 14px;font-size:0.82rem;background:#0F233E;" onclick="BN_APP.openSection('shop')">Посмотреть прицеп и примерить логотип →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- СЛОТЫ ДЛЯ ЛОГОТИПОВ ПАРТНЁРОВ И БЛАГОТВОРИТЕЛЕЙ -->
+      <div class="bn-partner-strip">
+        <div class="bn-partner-slot" onclick="BN_APP.openSection('gov')">
+          <span class="bn-slot-placeholder">[ Место для вашего логотипа ]</span>
+          <span class="bn-slot-caption">Министерство / Акимат / Управление образования</span>
+        </div>
+        <div class="bn-partner-slot" onclick="BN_APP.openSection('shop')">
+          <span class="bn-slot-placeholder">[ Место для вашего логотипа ]</span>
+          <span class="bn-slot-caption">Меценат / Фонд — Даритель Мобильной лаборатории 112</span>
+        </div>
+        <div class="bn-partner-slot" onclick="BN_APP.openSection('seniors')">
+          <span class="bn-slot-placeholder">[ Место для вашего логотипа ]</span>
+          <span class="bn-slot-caption">Партнёр Серебряного щита 60+ (Банк / Телеком)</span>
+        </div>
+        <div class="bn-partner-slot" onclick="BN_APP.openSection('inclusion')">
+          <span class="bn-slot-placeholder">[ Место для вашего логотипа ]</span>
+          <span class="bn-slot-caption">Благотворитель контура Инклюзии (ООП и СУСН)</span>
+        </div>
+      </div>
+
+      <div class="bn-section-head-bar">
+        <div>
+          <h2 data-ru="Выберите ваш раздел — нажмите на яркую кнопку блока, чтобы войти внутрь" data-kz="Бөліміңізді таңдаңыз — ішіне кіру үшін батырманы басыңыз">Выберите ваш раздел — нажмите на яркую кнопку блока, чтобы войти внутрь</h2>
+          <p data-ru="На главной странице — только общая навигация. Внутри каждого раздела открываются профильные тренажёры, уроки, расчёты и аналитика." data-kz="Басты бетте — тек жалпы навигация. Әр бөлімнің ішінде бейінді тренажерлер, сабақтар мен аналитика ашылады.">На главной странице — только общая навигация. Внутри каждого раздела открываются профильные тренажёры, уроки, расчёты и аналитика.</p>
+        </div>
+      </div>
+
+      <div id="bn-home-grid" class="bn-home-grid"></div>
+    </section>
+
+    <!-- ВНУТРЕННЕЕ ПРОСТРАНСТВО РАЗДЕЛОВ -->
+    <section id="bn-detail-view" style="display:none;"></section>
+  </main>
+
+  <footer class="bn-footer">
+    <div class="bn-footer-inner">
+      <div class="bn-privacy-strip">🔒 <strong>Как мы бережём данные:</strong> персональные данные детей не собираются, не хранятся и не передаются на сервер. Все тренажёры и расчёты работают анонимно прямо в браузере (в соответствии с Законом РК «О персональных данных и их защите»).</div>
+      <div><strong>© 2026 Национальная цифровая платформа «Безопасная нация»</strong> · Разработано Бюро образовательных стандартов «МЕТОДИКО». Все авторские права защищены.</div>
+      <div>В соответствии с действующими образовательными стандартами и законодательством Республики Казахстан</div>
+    </div>
+  </footer>
+
+  <script src="platform_engine.js"></script>
+</body>
+</html>

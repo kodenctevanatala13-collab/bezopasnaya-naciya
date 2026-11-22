@@ -1,0 +1,8 @@
+# Резервные копии и служебные файлы — не выгружать в GitHub и на Netlify
+_backup_*/
+.netlify/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.log

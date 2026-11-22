@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380">
+  <rect width="640" height="380" rx="18" fill="#F1F5F9"/>
+  <rect x="16" y="16" width="608" height="348" rx="14" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="8,5"/>
+  <g transform="translate(65, 50)">
+    <rect x="0" y="0" width="510" height="190" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="35" y="40" width="130" height="110" rx="14" fill="#1E293B"/>
+    <circle cx="72" cy="95" r="18" fill="#334155" stroke="#38BDF8" stroke-width="3"/>
+    <circle cx="128" cy="95" r="18" fill="#334155" stroke="#38BDF8" stroke-width="3"/>
+    <text x="100" y="62" text-anchor="middle" fill="#38BDF8" font-family="Arial, sans-serif" font-size="11" font-weight="bold">ПУЛЬТ БПЛА НВП</text>
+    <text x="190" y="55" fill="#0F233E" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Учебный симулятор БПЛА для кабинета НВП</text>
+    <text x="190" y="84" fill="#475569" font-family="Arial, sans-serif" font-size="13">• Профессиональный пульт управления + лицензионное ПО полётов</text>
+    <text x="190" y="110" fill="#475569" font-family="Arial, sans-serif" font-size="13">• Соответствует обновлённой программе НВП для школ и ТиПО</text>
+    <text x="190" y="136" fill="#475569" font-family="Arial, sans-serif" font-size="13">• Отработка поисково-спасательных миссий МЧС без риска поломки</text>
+  </g>
+  <rect x="65" y="264" width="510" height="74" rx="12" fill="#475569"/>
+  <text x="320" y="294" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="15" font-weight="bold">УЧЕБНЫЙ СИМУЛЯТОР БПЛА ДЛЯ ШКОЛЬНОГО КАБИНЕТА НВП</text>
+  <text x="320" y="320" text-anchor="middle" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Примерная цена: ~380 000 ₸ / рабочее место · Позиция полной версии каталога</text>
+</svg>
