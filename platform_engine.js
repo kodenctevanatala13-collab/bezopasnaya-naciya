@@ -45,8 +45,7 @@ window.BN_CONTACTS = {
   cityRu: 'Республика Казахстан, г. Алматы',
   cityKz: 'Қазақстан Республикасы, Алматы қ.',
   phoneDisplay: '+7 (700) 077-35-66',
-  waNumber: '77000773566',
-  website: 'https://metodico-kz.netlify.app/'
+  waNumber: '77000773566'
 };
 
 // Удобный помощник перевода RU / KZ
@@ -1789,19 +1788,19 @@ window.BN_APP = {
           <span class="bn-pill-tag" style="background:#DCFCE7;color:#166534;">${T('Связаться с разработчиком', 'Әзірлеушімен байланысу')}</span>
           <h3>${T('Обсудить пилот, партнёрство, размещение курса или поставку товаров', 'Пилотты, серіктестікті, курс орналастыруды не тауар жеткізуді талқылау')}</h3>
           <p style="font-size:0.88rem;color:#334155;">${T(
-            'Напишите нам напрямую в WhatsApp, оставьте структурированную заявку или перейдите на официальный портал разработчика:',
-            'Бізге тікелей WhatsApp-қа жазыңыз, өтінім қалдырыңыз немесе әзірлеушінің ресми сайтына өтіңіз:'
+            'Свяжитесь напрямую по номеру телефона или в WhatsApp, либо оставьте структурированную заявку:',
+            'Тікелей телефон немесе WhatsApp арқылы хабарласыңыз немесе өтінім қалдырыңыз:'
           )}</p>
           <div class="bn-contact-methods">
             <a class="bn-contact-link-btn wa" href="https://wa.me/${c.waNumber}?text=${encodeURIComponent(T('Здравствуйте! Пишу по проекту платформы «Безопасная нация».', 'Сәлеметсіз бе! «Қауіпсіз ұлт» платформа жобасы бойынша жазып тұрмын.'))}" target="_blank" rel="noopener noreferrer">
               💬 ${T('Написать в WhatsApp:', 'WhatsApp-қа жазу:')} ${c.phoneDisplay}
             </a>
+            <a class="bn-contact-link-btn tel" href="tel:+77000773566">
+              📞 ${T('Позвонить:', 'Қоңырау шалу:')} ${c.phoneDisplay}
+            </a>
             <button type="button" class="bn-contact-link-btn form" onclick="BN_APP.openContactModal('${T('Заявка на партнёрство / пилот', 'Серіктестікке / пилотқа өтінім')}')">
               ✉️ ${T('Заполнить и отправить заявку по выбранной теме', 'Таңдалған тақырып бойынша өтінім толтыру')}
             </button>
-            <a class="bn-contact-link-btn site" href="${c.website}" target="_blank" rel="noopener noreferrer">
-              🌐 ${T('Сайт разработчика ТОО «Метод и Ко» (МЕТОДИКО) ↗', 'Әзірлеуші сайты: «Метод и Ко» ЖШС (МЕТОДИКО) ↗')}
-            </a>
           </div>
         </div>
       </div>
@@ -3690,14 +3689,14 @@ window.BN_APP = {
 
         <div class="bn-contact-methods" style="margin-top:14px;">
           <button type="button" class="bn-contact-link-btn wa" onclick="BN_APP.sendLeadToWhatsApp('${safeTopic.replace(/'/g, '')}')">
-            💬 ${T('Отправить заявку в WhatsApp ТОО «Метод и Ко»', 'Өтінімді «Метод и Ко» ЖШС WhatsApp-ына жіберу')} (${c.phoneDisplay})
+            💬 ${T('Отправить заявку в WhatsApp', 'Өтінімді WhatsApp-қа жіберу')} (${c.phoneDisplay})
           </button>
+          <a class="bn-contact-link-btn tel" href="tel:+77000773566">
+            📞 ${T('Позвонить по номеру:', 'Нөмірге қоңырау шалу:')} ${c.phoneDisplay}
+          </a>
           <button type="button" class="bn-contact-link-btn form" onclick="BN_APP.copyLeadText('${safeTopic.replace(/'/g, '')}')">
             📋 ${T('Скопировать готовый текст заявки', 'Дайын өтінім мәтінін көшіріп алу')}
           </button>
-          <a class="bn-contact-link-btn site" href="${c.website}" target="_blank" rel="noopener noreferrer">
-            🌐 ${T('Перейти на сайт разработчика МЕТОДИКО ↗', 'Әзірлеушінің МЕТОДИКО сайтына өту ↗')}
-          </a>
         </div>
         <div id="lead-copy-status" style="margin-top:10px;font-size:0.84rem;color:#047857;font-weight:700;display:none;"></div>
       </div>

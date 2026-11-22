@@ -2102,6 +2102,11 @@ html.a11y-mode body {
   color: #FFFFFF;
 }
 
+.bn-contact-link-btn.tel {
+  background: #0284C7;
+  color: #FFFFFF;
+}
+
 .bn-contact-link-btn.site {
   background: #0F233E;
   color: #FFFFFF;
